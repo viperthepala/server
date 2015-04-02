@@ -10,6 +10,7 @@ local function serverSave()
 
 	if cleanMapAtServerSave then
 		cleanMap()
+		os.execute("sudo reboot")
 	end
 
 	saveServer()
