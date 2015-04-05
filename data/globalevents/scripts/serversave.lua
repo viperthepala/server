@@ -10,10 +10,10 @@ local function serverSave()
 
 	if cleanMapAtServerSave then
 		cleanMap()
-		os.execute("sudo reboot")
 	end
 
 	saveServer()
+	os.execute("sudo reboot")
 end
 
 local function secondServerSaveWarning()
